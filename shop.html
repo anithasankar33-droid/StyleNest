@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop All Dresses — StyleNest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/shop.css">
+</head>
+
+<body>
+
+    <div class="announce">
+        <p>Free alterations on every order, through Sunday · <span>Book a fitting →</span></p>
+    </div>
+
+    <header class="site-header" id="siteHeader">
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <a href="index.html" class="logo">Style<em>Nest</em></a>
+        <nav class="main-nav" id="mainNav">
+            <a href="shop.html" class="active-link">Shop</a>
+            <a href="categories.html">Occasions</a>
+            <a href="categories.html#new">New In</a>
+            <a href="about.html">Our Fabric</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="header-icons">
+            <button class="icon-btn" id="searchBtn" aria-label="Search">
+                <svg viewBox="0 0 24 24">
+                    <circle cx="11" cy="11" r="7" />
+                    <line x1="21" y1="21" x2="16.5" y2="16.5" />
+                </svg>
+            </button>
+            <a href="wishlist.html" class="icon-btn" aria-label="Wishlist">
+                <svg viewBox="0 0 24 24">
+                    <path
+                        d="M12 20s-7-4.35-9.5-8.5C.7 8.1 2.1 4.5 5.7 4.1 8 3.85 10 5 12 7.5 14 5 16 3.85 18.3 4.1c3.6.4 5 4 3.2 7.4C19 15.65 12 20 12 20z" />
+                </svg>
+                <span class="badge" id="wishlistCount">0</span>
+            </a>
+            <a href="cart.html" class="icon-btn" aria-label="Cart">
+                <svg viewBox="0 0 24 24">
+                    <path d="M4 6h16l-1.5 10.5a2 2 0 0 1-2 1.5H7.5a2 2 0 0 1-2-1.5L4 6z" />
+                    <path d="M8 6V5a4 4 0 0 1 8 0v1" />
+                </svg>
+                <span class="badge" id="cartCount">0</span>
+            </a>
+        </div>
+        <div class="search-panel" id="searchPanel">
+            <input type="text" placeholder="Search for a silhouette, colour, occasion…" aria-label="Search dresses">
+            <button id="searchClose" aria-label="Close search">✕</button>
+        </div>
+    </header>
+
+    <!-- ===== Page header ===== -->
+    <section class="shop-hero">
+        <p class="breadcrumb"><a href="index.html">Home</a> / <span>Shop All</span></p>
+        <h1>The Full Rack.</h1>
+        <p class="shop-sub">Every silhouette we make, in one place — filter by occasion, size, and cut to find yours.
+        </p>
+    </section>
+
+    <!-- ===== Shop layout ===== -->
+    <section class="shop-layout">
+
+        <!-- Filters sidebar -->
+        <aside class="filters" id="shopFilters">
+            <div class="filter-group">
+                <h3>Occasion</h3>
+                <label class="check"><input type="checkbox" name="category" value="Casual Wear"><span>Casual
+                        Wear</span></label>
+                <label class="check"><input type="checkbox" name="category" value="Office Wear"><span>Office
+                        Wear</span></label>
+                <label class="check"><input type="checkbox" name="category" value="Party Wear"><span>Party
+                        Wear</span></label>
+                <label class="check"><input type="checkbox" name="category" value="Evening Wear"><span>Evening
+                        Wear</span></label>
+                <label class="check"><input type="checkbox" name="category" value="Wedding Guest"> <span>Wedding
+                        Guest</span></label>
+                <label class="check"><input type="checkbox" name="category" value="Summer Collection"> <span>Summer
+                        Collection</span></label>
+                <label class="check"><input type="checkbox" name="category" value="Winter Collection"> <span>Winter
+                        Collection</span></label>
+                <label class="check"><input type="checkbox" name="category" value="Designer Collection"> <span>Designer
+                        Collection</span></label>
+                <label class="check"><input type="checkbox" name="category" value="Luxury Collection"> <span>Luxury
+                        Collection</span></label>
+                <label class="check"><input type="checkbox" name="category" value="Floral Collection"> <span>Floral
+                        Collection</span></label>
+                <label class="check"><input type="checkbox" name="category" value="Ethnic Collection"> <span>Ethnic
+                        Collection</span></label>
+                <label class="check"><input type="checkbox" name="category" value="New Arrivals"> <span>New
+                        Arrivals</span></label>
+            </div>
+
+            <div class="filter-group">
+                <h3>Silhouette</h3>
+                <label class="check"><input type="checkbox" name="type" value="mini"><span>Mini</span></label>
+                <label class="check"><input type="checkbox" name="type" value="midi"><span>Midi</span></label>
+                <label class="check"><input type="checkbox" name="type" value="maxi"><span>Maxi</span></label>
+            </div>
+
+            <div class="filter-group">
+                <h3>Size</h3>
+                <div class="size-grid" id="sizeFilter">
+                    <button type="button" class="size-chip" data-size="XS">XS</button>
+                    <button type="button" class="size-chip" data-size="S">S</button>
+                    <button type="button" class="size-chip" data-size="M">M</button>
+                    <button type="button" class="size-chip" data-size="L">L</button>
+                    <button type="button" class="size-chip" data-size="XL">XL</button>
+                </div>
+            </div>
+
+            <div class="filter-group">
+                <h3>Price</h3>
+                <div class="price-range">
+                    <input type="range" id="priceRange" min="2000" max="10000" step="200" value="10000">
+                    <p>Up to <span id="priceValue">₹10,000</span></p>
+                </div>
+            </div>
+
+            <button class="btn btn-ghost clear-filters" id="clearFilters">Clear Filters</button>
+        </aside>
+
+        <!-- Product results -->
+        <div class="shop-main">
+            <div class="shop-toolbar">
+                <p id="resultCount">12 dresses</p>
+                <label class="sort-label">
+                    Sort by
+                    <select id="sortSelect">
+                        <option value="featured">Featured</option>
+                        <option value="price-asc">Price: Low to High</option>
+                        <option value="price-desc">Price: High to Low</option>
+                        <option value="name-asc">Name: A–Z</option>
+                    </select>
+                </label>
+            </div>
+
+            <div class="product-grid" id="shopGrid"></div>
+
+            <p class="no-results" id="noResults" hidden>No dresses match those filters yet — try widening your search.
+            </p>
+
+            <div class="pagination" id="pagination"></div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">Style<em>Nest</em></a>
+                <p>Pattern-tested dresses, cut for real bodies and real rooms.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Shop</h3>
+                <a href="shop.html">All Dresses</a>
+                <a href="categories.html">Occasions</a>
+                <a href="wishlist.html">Wishlist</a>
+            </div>
+            <div class="footer-col">
+                <h3>Account</h3>
+                <a href="login.html">Sign In</a>
+                <a href="signup.html">Create Account</a>
+                <a href="orders.html">Track an Order</a>
+            </div>
+            <div class="footer-col">
+                <h3>Studio</h3>
+                <a href="about.html">Our Fabric</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 StyleNest Studio. All measurements in good faith.</p>
+        </div>
+    </footer>
+
+    <div class="toast" id="toast"></div>
+
+    <script src="js/script.js"></script>
+    <script src="js/shop.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile — StyleNest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+
+<body>
+
+    <header class="site-header" id="siteHeader">
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <a href="index.html" class="logo">Style<em>Nest</em></a>
+        <nav class="main-nav" id="mainNav">
+            <a href="shop.html">Shop</a>
+            <a href="categories.html">Occasions</a>
+            <a href="categories.html#new">New In</a>
+            <a href="about.html">Our Fabric</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="header-icons">
+            <button class="icon-btn" id="searchBtn" aria-label="Search">
+                <svg viewBox="0 0 24 24">
+                    <circle cx="11" cy="11" r="7" />
+                    <line x1="21" y1="21" x2="16.5" y2="16.5" />
+                </svg>
+            </button>
+            <a href="wishlist.html" class="icon-btn" aria-label="Wishlist">
+                <svg viewBox="0 0 24 24">
+                    <path
+                        d="M12 20s-7-4.35-9.5-8.5C.7 8.1 2.1 4.5 5.7 4.1 8 3.85 10 5 12 7.5 14 5 16 3.85 18.3 4.1c3.6.4 5 4 3.2 7.4C19 15.65 12 20 12 20z" />
+                </svg>
+                <span class="badge" id="wishlistCount">0</span>
+            </a>
+            <a href="cart.html" class="icon-btn" aria-label="Cart">
+                <svg viewBox="0 0 24 24">
+                    <path d="M4 6h16l-1.5 10.5a2 2 0 0 1-2 1.5H7.5a2 2 0 0 1-2-1.5L4 6z" />
+                    <path d="M8 6V5a4 4 0 0 1 8 0v1" />
+                </svg>
+                <span class="badge" id="cartCount">0</span>
+            </a>
+        </div>
+        <div class="search-panel" id="searchPanel">
+            <input type="text" placeholder="Search for a silhouette, colour, occasion…" aria-label="Search dresses">
+            <button id="searchClose" aria-label="Close search">✕</button>
+        </div>
+    </header>
+
+    <section class="account-hero">
+        <p class="breadcrumb"><a href="index.html">Home</a> / <span>My Account</span></p>
+        <h1 id="greeting">Hello there.</h1>
+    </section>
+
+    <section class="account-layout">
+
+        <aside class="account-nav">
+            <button class="account-nav-item active" data-panel="details">Account Details</button>
+            <button class="account-nav-item" data-panel="sizing">Size Profile</button>
+            <button class="account-nav-item" data-panel="addresses">Saved Addresses</button>
+            <a class="account-nav-item" href="orders.html">Order History</a>
+            <a class="account-nav-item" href="wishlist.html">Wishlist</a>
+            <button class="account-nav-item signout" id="signOutBtn">Sign Out</button>
+        </aside>
+
+        <div class="account-main">
+
+            <div class="account-panel active" id="panel-details">
+                <h2>Account Details</h2>
+                <form id="detailsForm">
+                    <div class="form-grid">
+                        <label>Full Name
+                            <input type="text" id="profileName" name="fullName">
+                        </label>
+                        <label>Email
+                            <input type="email" id="profileEmail" name="email">
+                        </label>
+                        <label>Phone
+                            <input type="tel" name="phone" placeholder="+91 00000 00000">
+                        </label>
+                        <label>Date of Birth
+                            <input type="date" name="dob">
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Save Changes</button>
+                </form>
+            </div>
+
+            <div class="account-panel" id="panel-sizing">
+                <h2>Size Profile</h2>
+                <p class="panel-sub">Save this once and we'll flag any dress that runs differently before you order.</p>
+                <div class="form-grid">
+                    <label>Usual Size
+                        <select name="usualSize">
+                            <option>XS</option>
+                            <option>S</option>
+                            <option selected>M</option>
+                            <option>L</option>
+                            <option>XL</option>
+                        </select>
+                    </label>
+                    <label>Height
+                        <select name="height">
+                            <option>Under 5'2"</option>
+                            <option selected>5'2" – 5'6"</option>
+                            <option>5'6" – 5'10"</option>
+                            <option>Over 5'10"</option>
+                        </select>
+                    </label>
+                    <label>Preferred Fit
+                        <select name="fit">
+                            <option>Fitted</option>
+                            <option selected>True to Size</option>
+                            <option>Relaxed</option>
+                        </select>
+                    </label>
+                </div>
+                <button type="button" class="btn btn-primary" id="saveSizing">Save Size Profile</button>
+            </div>
+
+            <div class="account-panel" id="panel-addresses">
+                <h2>Saved Addresses</h2>
+                <div class="address-card">
+                    <p class="address-tag">Home</p>
+                    <p>142 Anna Nagar 3rd Street</p>
+                    <p>Chennai, Tamil Nadu 600040</p>
+                    <div class="address-actions">
+                        <button class="text-link">Edit</button>
+                        <button class="text-link">Remove</button>
+                    </div>
+                </div>
+                <button class="btn btn-ghost">+ Add New Address</button>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">Style<em>Nest</em></a>
+                <p>Pattern-tested dresses, cut for real bodies and real rooms.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Shop</h3>
+                <a href="shop.html">All Dresses</a>
+                <a href="categories.html">Occasions</a>
+                <a href="wishlist.html">Wishlist</a>
+            </div>
+            <div class="footer-col">
+                <h3>Account</h3>
+                <a href="login.html">Sign In</a>
+                <a href="signup.html">Create Account</a>
+                <a href="orders.html">Track an Order</a>
+            </div>
+            <div class="footer-col">
+                <h3>Studio</h3>
+                <a href="about.html">Our Fabric</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 StyleNest Studio. All measurements in good faith.</p>
+        </div>
+    </footer>
+
+    <div class="toast" id="toast"></div>
+
+    <script src="js/script.js"></script>
+    <script src="js/profile.js"></script>
+</body>
+
+</html>

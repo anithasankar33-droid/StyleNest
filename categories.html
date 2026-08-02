@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop by Occasion — StyleNest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="site-header" id="siteHeader">
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <a href="index.html" class="logo">Style<em>Nest</em></a>
+        <nav class="main-nav" id="mainNav">
+            <a href="shop.html">Shop</a>
+            <a href="categories.html" class="active-link">Occasions</a>
+            <a href="categories.html#new">New In</a>
+            <a href="about.html">Our Fabric</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="header-icons">
+            <button class="icon-btn" id="searchBtn" aria-label="Search">
+                <svg viewBox="0 0 24 24">
+                    <circle cx="11" cy="11" r="7" />
+                    <line x1="21" y1="21" x2="16.5" y2="16.5" />
+                </svg>
+            </button>
+            <a href="wishlist.html" class="icon-btn" aria-label="Wishlist">
+                <svg viewBox="0 0 24 24">
+                    <path
+                        d="M12 20s-7-4.35-9.5-8.5C.7 8.1 2.1 4.5 5.7 4.1 8 3.85 10 5 12 7.5 14 5 16 3.85 18.3 4.1c3.6.4 5 4 3.2 7.4C19 15.65 12 20 12 20z" />
+                </svg>
+                <span class="badge" id="wishlistCount">0</span>
+            </a>
+            <a href="cart.html" class="icon-btn" aria-label="Cart">
+                <svg viewBox="0 0 24 24">
+                    <path d="M4 6h16l-1.5 10.5a2 2 0 0 1-2 1.5H7.5a2 2 0 0 1-2-1.5L4 6z" />
+                    <path d="M8 6V5a4 4 0 0 1 8 0v1" />
+                </svg>
+                <span class="badge" id="cartCount">0</span>
+            </a>
+        </div>
+        <div class="search-panel" id="searchPanel">
+            <input type="text" placeholder="Search for a silhouette, colour, occasion…" aria-label="Search dresses">
+            <button id="searchClose" aria-label="Close search">✕</button>
+        </div>
+    </header>
+
+    <section class="shop-hero">
+        <p class="breadcrumb"><a href="index.html">Home</a> / <span>Occasions</span></p>
+        <h1>What's the room?</h1>
+        <p class="shop-sub">
+        <h4> Every occasion deserves the perfect outfit. Explore thoughtfully curated collections for
+            weddings, parties, office wear, and everyday fashion—making it easy to find a look that feels as good as it
+            looks.. </h4>
+        </p>
+    </section>
+
+    <section class="category-grid-page">
+        <a href="shop.html?category=Casual Wear" class="category-tile" id="Casual Wear">
+            <img src="images/Casual Wear.jpg" alt="Wedding guest dresses">
+            <div class="category-tile-copy">
+                <p class="eyebrow">14 Styles</p>
+                <h2>Casual Wear</h2>
+                <p>Stay comfortable and stylish with everyday outfits crafted from soft fabrics, modern fits, and
+                    timeless designs for every occasion.</p>
+                <span class="tile-link">Shop the edit →</span>
+            </div>
+        </a>
+
+        <a href="shop.html?category=Office Wear" class="category-tile" id="Office Wear">
+            <img src="images/Wear.jpg" alt="Office to evening dresses">
+            <div class="category-tile-copy">
+                <p class="eyebrow">11 Styles</p>
+                <h2>Office Wear</h2>
+                <p>Elevate your workday wardrobe with elegant, professional attire that combines comfort, confidence,
+                    and contemporary style.</p>
+                <span class="tile-link">Shop the edit →</span>
+            </div>
+        </a>
+
+        <a href="shop.html?category=Party Wear" class="category-tile" id="Party Wear">
+            <img src="images/Party Wear.jpg" alt="Black tie gowns">
+            <div class="category-tile-copy">
+                <p class="eyebrow">9 Styles</p>
+                <h2>Party Wear</h2>
+                <p>Make every celebration unforgettable with glamorous outfits featuring eye-catching designs, luxurious
+                    fabrics, and perfect fits</p>
+                <span class="tile-link">Shop the edit →</span>
+            </div>
+        </a>
+
+        <a href="shop.html?category=Evening Wear" class="category-tile" id="Evening Wear">
+            <img src="images/Evening Wear.jpg" alt="Everyday linen dresses">
+            <div class="category-tile-copy">
+                <p class="eyebrow">16 Styles</p>
+                <h2>Evening Wear</h2>
+                <p>Discover sophisticated evening dresses designed with graceful silhouettes, premium materials, and
+                    timeless elegance for special occasions..</p>
+                <span class="tile-link">Shop the edit →</span>
+            </div>
+        </a>
+
+        <a href="shop.html?category=Wedding Guest" class="category-tile" id="Wedding Guest">
+            <img src="images/Guest.jpg" alt="Everyday linen dresses">
+            <div class="category-tile-copy">
+                <p class="eyebrow">16 Styles</p>
+                <h2>Wedding Guest</h2>
+                <p>Celebrate life's most memorable moments with beautifully crafted wedding outfits that blend
+                    tradition, elegance, and modern fashion.</p>
+                <span class="tile-link">Shop the edit →</span>
+            </div>
+        </a>
+
+        <a href="shop.html?category=Summer Collection" class="category-tile" id="Summer Collection">
+            <img src="images/Summer Collection.jpg" alt="Everyday linen dresses">
+            <div class="category-tile-copy">
+                <p class="eyebrow">16 Styles</p>
+                <h2>Summer Collection</h2>
+                <p>Beat the heat in lightweight, breathable, and stylish outfits designed to keep you cool while looking
+                    effortlessly fashionable.</p>
+                <span class="tile-link">Shop the edit →</span>
+            </div>
+        </a>
+
+        <a href="shop.html?category=Winter Collection" class="category-tile" id="Winter Collection">
+            <img src="images/Winter Collection.jpg" alt="Everyday linen dresses">
+            <div class="category-tile-copy">
+                <p class="eyebrow">16 Styles</p>
+                <h2>Winter Collection</h2>
+                <p>Stay warm without compromising on style with cozy layers, premium fabrics, and chic winter essentials
+                    for every day.</p>
+                <span class="tile-link">Shop the edit →</span>
+            </div>
+        </a>
+
+        <a href="shop.html?category=Designer Collection" class="category-tile" id="Designer Collection">
+            <img src="images/Designer Collection.jpg" alt="Everyday linen dresses">
+            <div class="category-tile-copy">
+                <p class="eyebrow">16 Styles</p>
+                <h2>Designer Collection</h2>
+                <p>Explore exclusive designer pieces featuring premium craftsmanship, unique details, and luxurious
+                    styles that make a lasting impression.</p>
+                <span class="tile-link">Shop the edit →</span>
+            </div>
+        </a>
+
+        <a href="shop.html?category=Luxury Collection" class="category-tile" id="Luxury Collection">
+            <img src="images/Luxury Collection.jpg" alt="Everyday linen dresses">
+            <div class="category-tile-copy">
+                <p class="eyebrow">16 Styles</p>
+                <h2>Luxury Collection</h2>
+                <p>Experience timeless luxury with premium-quality garments crafted from the finest materials for
+                    unmatched elegance and sophistication.</p>
+                <span class="tile-link">Shop the edit →</span>
+            </div>
+        </a>
+
+        <a href="shop.html?category=Floral Collection" class="category-tile" id="Floral Collection">
+            <img src="images/Floral Collection.jpg" alt="Everyday linen dresses">
+            <div class="category-tile-copy">
+                <p class="eyebrow">16 Styles</p>
+                <h2>Floral Collection</h2>
+                <p>Brighten your wardrobe with beautiful floral prints and fresh, feminine designs that bring charm to
+                    every season.</p>
+                <span class="tile-link">Shop the edit →</span>
+            </div>
+        </a>
+
+        <a href="shop.html?category=Ethnic Collection" class="category-tile" id="Ethnic Collection">
+            <img src="images/Ethnic Collection.jpg" alt="Everyday linen dresses">
+            <div class="category-tile-copy">
+                <p class="eyebrow">16 Styles</p>
+                <h2>Ethnic Collection</h2>
+                <p>Embrace cultural elegance with traditional and contemporary ethnic wear, perfect for festivals,
+                    weddings, and special celebrations.</p>
+                <span class="tile-link">Shop the edit →</span>
+            </div>
+        </a>
+
+        <a href="shop.html?category=New Arrivals" class="category-tile" id="New Arrivals">
+            <img src="images/New Arrivals.jpg" alt="Everyday linen dresses">
+            <div class="category-tile-copy">
+                <p class="eyebrow">16 Styles</p>
+                <h2>New Arrivals</h2>
+                <p>Stay ahead of the trends with our latest fashion arrivals, featuring fresh designs, seasonal styles,
+                    and must-have wardrobe essentials.</p>
+                <span class="tile-link">Shop the edit →</span>
+            </div>
+        </a>
+
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">Style<em>Nest</em></a>
+                <p>Pattern-tested dresses, cut for real bodies and real rooms.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Shop</h3>
+                <a href="shop.html">All Dresses</a>
+                <a href="categories.html">Occasions</a>
+                <a href="wishlist.html">Wishlist</a>
+            </div>
+            <div class="footer-col">
+                <h3>Account</h3>
+                <a href="login.html">Sign In</a>
+                <a href="signup.html">Create Account</a>
+                <a href="orders.html">Track an Order</a>
+            </div>
+            <div class="footer-col">
+                <h3>Studio</h3>
+                <a href="about.html">Our Fabric</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 StyleNest Studio. All measurements in good faith.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

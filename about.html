@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Fabric — StyleNest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="site-header" id="siteHeader">
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <a href="index.html" class="logo">Style<em>Nest</em></a>
+        <nav class="main-nav" id="mainNav">
+            <a href="shop.html">Shop</a>
+            <a href="categories.html">Occasions</a>
+            <a href="categories.html#new">New In</a>
+            <a href="about.html" class="active-link">Our Fabric</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="header-icons">
+            <button class="icon-btn" id="searchBtn" aria-label="Search">
+                <svg viewBox="0 0 24 24">
+                    <circle cx="11" cy="11" r="7" />
+                    <line x1="21" y1="21" x2="16.5" y2="16.5" />
+                </svg>
+            </button>
+            <a href="wishlist.html" class="icon-btn" aria-label="Wishlist">
+                <svg viewBox="0 0 24 24">
+                    <path
+                        d="M12 20s-7-4.35-9.5-8.5C.7 8.1 2.1 4.5 5.7 4.1 8 3.85 10 5 12 7.5 14 5 16 3.85 18.3 4.1c3.6.4 5 4 3.2 7.4C19 15.65 12 20 12 20z" />
+                </svg>
+                <span class="badge" id="wishlistCount">0</span>
+            </a>
+            <a href="cart.html" class="icon-btn" aria-label="Cart">
+                <svg viewBox="0 0 24 24">
+                    <path d="M4 6h16l-1.5 10.5a2 2 0 0 1-2 1.5H7.5a2 2 0 0 1-2-1.5L4 6z" />
+                    <path d="M8 6V5a4 4 0 0 1 8 0v1" />
+                </svg>
+                <span class="badge" id="cartCount">0</span>
+            </a>
+        </div>
+        <div class="search-panel" id="searchPanel">
+            <input type="text" placeholder="Search for a silhouette, colour, occasion…" aria-label="Search dresses">
+            <button id="searchClose" aria-label="Close search">✕</button>
+        </div>
+    </header>
+
+    <!-- ===== About hero ===== -->
+    <section class="about-hero">
+        <div class="about-hero-copy">
+            <p class="eyebrow">Since 2019</p>
+            <h1>We pattern-test everything <em>on real bodies</em> before it's real stock.</h1>
+            <p class="about-lead">StyleNest started as a single pattern-cutting table in Chennai, built on one
+                frustration: dresses that looked perfect on the model and wrong on everyone else. We still work from
+                that table.</p>
+        </div>
+        <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=1000&auto=format&fit=crop"
+            alt="Pattern cutter working at a fabric table">
+    </section>
+
+    <!-- ===== Numbers strip ===== -->
+    <section class="about-numbers">
+        <div class="number-block">
+            <p class="number">9</p>
+            <p class="number-label">Body types every style is tested on</p>
+        </div>
+        <div class="number-block">
+            <p class="number">32</p>
+            <p class="number-label">Low-impact certified fabrics in rotation</p>
+        </div>
+        <div class="number-block">
+            <p class="number">60</p>
+            <p class="number-label">Days of free resizing on every order</p>
+        </div>
+        <div class="number-block">
+            <p class="number">6</p>
+            <p class="number-label">Years cutting from the same table</p>
+        </div>
+    </section>
+
+    <!-- ===== Process ===== -->
+    <section class="about-process">
+        <div class="section-head">
+            <p class="eyebrow">How a Dress Gets Made Here</p>
+            <h2>From sketch to your wardrobe.</h2>
+        </div>
+
+        <div class="process-grid">
+            <div class="process-step">
+                <p class="process-num">01</p>
+                <h3>Drawn on the body, not the mannequin</h3>
+                <p>Every silhouette starts as a live fitting — we design toward how fabric moves on a walking, sitting,
+                    dancing body.</p>
+            </div>
+            <div class="process-step">
+                <p class="process-num">02</p>
+                <h3>Graded across nine sizes</h3>
+                <p>Instead of scaling one pattern up and down, we re-fit proportions at each size so a UK 8 and a UK 18
+                    both hang correctly.</p>
+            </div>
+            <div class="process-step">
+                <p class="process-num">03</p>
+                <h3>Sourced from certified mills</h3>
+                <p>Every fabric in rotation is checked against GOTS or OEKO-TEX low-impact standards before it reaches
+                    the cutting table.</p>
+            </div>
+            <div class="process-step">
+                <p class="process-num">04</p>
+                <h3>Free resizing, not just returns</h3>
+                <p>If a dress doesn't sit right, our tailors adjust it free within 60 days — the goal is the fit, not
+                    the refund.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Quote ===== -->
+    <section class="editorial">
+        <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?q=80&w=1200&auto=format&fit=crop"
+            alt="Close up of dress fabric and stitching detail">
+        <div class="editorial-copy">
+            <p class="quote-mark">“</p>
+            <p class="quote">Fast fashion asks how quickly we can copy a trend. We ask how long a dress can stay in
+                someone's rotation before it falls apart — that's a different design brief entirely.</p>
+            <p class="quote-attr">— Priya Raman, Head Pattern Cutter</p>
+        </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="about-cta">
+        <h2>See the fit for yourself.</h2>
+        <a href="shop.html" class="btn btn-primary">Shop the Edit</a>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">Style<em>Nest</em></a>
+                <p>Pattern-tested dresses, cut for real bodies and real rooms.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Shop</h3>
+                <a href="shop.html">All Dresses</a>
+                <a href="categories.html">Occasions</a>
+                <a href="wishlist.html">Wishlist</a>
+            </div>
+            <div class="footer-col">
+                <h3>Account</h3>
+                <a href="login.html">Sign In</a>
+                <a href="signup.html">Create Account</a>
+                <a href="orders.html">Track an Order</a>
+            </div>
+            <div class="footer-col">
+                <h3>Studio</h3>
+                <a href="about.html">Our Fabric</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 StyleNest Studio. All measurements in good faith.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

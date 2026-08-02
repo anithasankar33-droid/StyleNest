@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishlist — StyleNest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="site-header" id="siteHeader">
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <a href="index.html" class="logo">Style<em>Nest</em></a>
+        <nav class="main-nav" id="mainNav">
+            <a href="shop.html">Shop</a>
+            <a href="categories.html">Occasions</a>
+            <a href="categories.html#new">New In</a>
+            <a href="about.html">Our Fabric</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="header-icons">
+            <button class="icon-btn" id="searchBtn" aria-label="Search">
+                <svg viewBox="0 0 24 24">
+                    <circle cx="11" cy="11" r="7" />
+                    <line x1="21" y1="21" x2="16.5" y2="16.5" />
+                </svg>
+            </button>
+            <a href="wishlist.html" class="icon-btn" aria-label="Wishlist">
+                <svg viewBox="0 0 24 24">
+                    <path
+                        d="M12 20s-7-4.35-9.5-8.5C.7 8.1 2.1 4.5 5.7 4.1 8 3.85 10 5 12 7.5 14 5 16 3.85 18.3 4.1c3.6.4 5 4 3.2 7.4C19 15.65 12 20 12 20z" />
+                </svg>
+                <span class="badge" id="wishlistCount">0</span>
+            </a>
+            <a href="cart.html" class="icon-btn" aria-label="Cart">
+                <svg viewBox="0 0 24 24">
+                    <path d="M4 6h16l-1.5 10.5a2 2 0 0 1-2 1.5H7.5a2 2 0 0 1-2-1.5L4 6z" />
+                    <path d="M8 6V5a4 4 0 0 1 8 0v1" />
+                </svg>
+                <span class="badge" id="cartCount">0</span>
+            </a>
+        </div>
+        <div class="search-panel" id="searchPanel">
+            <input type="text" placeholder="Search for a silhouette, colour, occasion…" aria-label="Search dresses">
+            <button id="searchClose" aria-label="Close search">✕</button>
+        </div>
+    </header>
+
+    <section class="wishlist-hero">
+        <p class="breadcrumb"><a href="index.html">Home</a> / <span>Wishlist</span></p>
+        <h1>Saved for Later.</h1>
+        <p class="shop-sub">Everything you've held onto — ready whenever you're ready.</p>
+    </section>
+
+    <section class="wishlist-section">
+        <div class="product-grid" id="wishlistGrid"></div>
+
+        <div class="empty-state" id="emptyWishlist" hidden>
+            <p class="quote-mark">“</p>
+            <h2>Nothing saved yet.</h2>
+            <p>Tap the heart on any dress to keep it here.</p>
+            <a href="shop.html" class="btn btn-primary">Browse the Shop</a>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">Style<em>Nest</em></a>
+                <p>Pattern-tested dresses, cut for real bodies and real rooms.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Shop</h3>
+                <a href="shop.html">All Dresses</a>
+                <a href="categories.html">Occasions</a>
+                <a href="wishlist.html">Wishlist</a>
+            </div>
+            <div class="footer-col">
+                <h3>Account</h3>
+                <a href="login.html">Sign In</a>
+                <a href="signup.html">Create Account</a>
+                <a href="orders.html">Track an Order</a>
+            </div>
+            <div class="footer-col">
+                <h3>Studio</h3>
+                <a href="about.html">Our Fabric</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 StyleNest Studio. All measurements in good faith.</p>
+        </div>
+    </footer>
+
+    <div class="toast" id="toast"></div>
+
+    <script src="js/script.js"></script>
+    <script src="js/wishlist.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StyleNest — Dresses Cut for the Way You Move</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ===== Announcement bar ===== -->
+    <div class="announce">
+        <p>Free alterations on every order, through Sunday · <span>Book a fitting →</span></p>
+    </div>
+
+    <!-- ===== Header ===== -->
+    <header class="site-header" id="siteHeader">
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+
+        <a href="index.html" class="logo">Style<em>Nest</em></a>
+
+        <nav class="main-nav" id="mainNav">
+            <a href="shop.html">Shop</a>
+            <a href="categories.html">Occasions</a>
+            <a href="categories.html#new">New In</a>
+            <a href="about.html">Our Fabric</a>
+            <a href="contact.html">Contact</a>
+            <a href="accessories.html">Accessories</a>
+        </nav>
+
+        <div class="header-icons">
+            <button class="icon-btn" id="searchBtn" aria-label="Search">
+                <svg viewBox="0 0 24 24">
+                    <circle cx="11" cy="11" r="7" />
+                    <line x1="21" y1="21" x2="16.5" y2="16.5" />
+                </svg>
+            </button>
+            <a href="wishlist.html" class="icon-btn" aria-label="Wishlist">
+                <svg viewBox="0 0 24 24">
+                    <path
+                        d="M12 20s-7-4.35-9.5-8.5C.7 8.1 2.1 4.5 5.7 4.1 8 3.85 10 5 12 7.5 14 5 16 3.85 18.3 4.1c3.6.4 5 4 3.2 7.4C19 15.65 12 20 12 20z" />
+                </svg>
+                <span class="badge" id="wishlistCount">0</span>
+            </a>
+            <a href="cart.html" class="icon-btn" aria-label="Cart">
+                <svg viewBox="0 0 24 24">
+                    <path d="M4 6h16l-1.5 10.5a2 2 0 0 1-2 1.5H7.5a2 2 0 0 1-2-1.5L4 6z" />
+                    <path d="M8 6V5a4 4 0 0 1 8 0v1" />
+                </svg>
+                <span class="badge" id="cartCount">0</span>
+            </a>
+        </div>
+
+        <div class="search-panel" id="searchPanel">
+            <input id="searchInput" type="text" placeholder="Search dresses..." aria-label="Search dresses">
+            <button id="searchClose" aria-label="Close search">✕</button>
+        </div>
+    </header>
+
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+        <div class="hero-copy">
+            <p class="eyebrow">Autumn / Winter — Fitting Notes No. 04</p>
+            <h1>Dresses that <em>hang</em><br>the way they're <em>drawn</em>.</h1>
+            <p class="hero-sub">Every StyleNest silhouette is pattern-tested on nine body types before it reaches you —
+                so the drape you see on the hanger is the drape you get on you.</p>
+            <div class="hero-actions">
+                <a href="shop.html" class="btn btn-primary">Shop the Edit</a>
+                <a href="categories.html" class="btn btn-ghost">Find Your Occasion</a>
+            </div>
+            <ul class="hero-facts">
+                <li><strong>Bias-cut</strong><span>drapes with the body</span></li>
+                <li><strong>32 fabrics</strong><span>certified low-impact</span></li>
+                <li><strong>Free resizing</strong><span>within 60 days</span></li>
+            </ul>
+        </div>
+
+        <div class="hero-visual">
+            <div class="hero-frame">
+                <img src="images/hero-frame.jpg" alt="Model wearing a flowing terracotta midi dress" loading="eager">
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Occasion strip ===== -->
+    <section class="occasions" aria-label="Shop by occasion">
+        <div class="section-head">
+            <p class="eyebrow">Shop by Occasion</p>
+            <h2>Every room has a dress code.</h2>
+        </div>
+
+        <div class="occasion-rail">
+            <a class="occasion-card" href="categories.html#Casual Wear">
+                <img src="images/Casual Wear.jpg" alt="">
+                <span>Casual Wear</span>
+            </a>
+            <a class="occasion-card" href="categories.html#Office Wear">
+                <img src="images/Wear.jpg" alt="Tailored dress for the office">
+                <span>Office Wear</span>
+            </a>
+            <a class="occasion-card" href="categories.html#Party Wear">
+                <img src="images/Party Wear.jpg" alt="Floor length gown for a gala">
+                <span>Party Wear</span>
+            </a>
+            <a class="occasion-card" href="categories.html#Evening Wear">
+                <img src="images/Evening Wear.jpg" alt="Casual linen dress for daily wear">
+                <span>Evening Wear</span>
+            </a>
+            <a class="occasion-card" href="categories.html#Wedding Guest">
+                <img src="images/Guest.jpg" alt="Guest wearing a pastel wedding-guest dress">
+                <span>Wedding Guest</span>
+            </a>
+            <a class="occasion-card" href="categories.html#Summer Collection">
+                <img src="images/Summer Collection.jpg" alt="Guest wearing a pastel wedding-guest dress">
+                <span>Summer Collection</span>
+            </a> <a class="occasion-card" href="categories.html#Winter Collection">
+                <img src="images/Winter Collection.jpg" alt="Guest wearing a pastel wedding-guest dress">
+                <span>Winter Collection</span>
+            </a> <a class="occasion-card" href="categories.html#Designer Collection">
+                <img src="images/Designer Collection.jpg" alt="Guest wearing a pastel wedding-guest dress">
+                <span>Designer Collection</span>
+            </a> <a class="occasion-card" href="categories.html#Luxury Collection">
+                <img src="images/Luxury Collection.jpg" alt="Guest wearing a pastel wedding-guest dress">
+                <span>Luxury Collection</span>
+            </a> <a class="occasion-card" href="categories.html#Floral Collection">
+                <img src="images/Floral Collection.jpg" alt="Guest wearing a pastel wedding-guest dress">
+                <span>Floral Collection</span>
+            </a> <a class="occasion-card" href="categories.html#Ethnic Collection">
+                <img src="images/Ethnic Collection.jpg" alt="Guest wearing a pastel wedding-guest dress">
+                <span>Ethnic Collection</span>
+            </a> <a class="occasion-card" href="categories.html#New Arrivals">
+                <img src="images/New Arrivals.jpg" alt="Guest wearing a pastel wedding-guest dress">
+                <span>New Arrivals</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- ===== Trending products ===== -->
+    <section class="trending" id="trending">
+        <div class="section-head">
+            <p class="eyebrow">Fitting Room Favourites</p>
+            <h2>Most re-ordered this season.</h2>
+            <div class="tabs" id="filterTabs">
+                <div class="tabs" id="filterTabs">
+                    <button class="tab active" data-filter="all">All</button>
+                    <button class="tab" data-filter="Casual Wear">Casual Wear</button>
+                    <button class="tab" data-filter="Office Wear">Office Wear</button>
+                    <button class="tab" data-filter="Party Wear">Party Wear</button>
+                    <button class="tab" data-filter="Evening Wear">Evening Wear</button>
+                    <button class="tab" data-filter="Wedding Guest">Wedding Guest</button>
+                    <button class="tab" data-filter="Summer Collection">Summer</button>
+                    <button class="tab" data-filter="Winter Collection">Winter</button>
+                    <button class="tab" data-filter="Designer Collection">Designer</button>
+                    <button class="tab" data-filter="Luxury Collection">Luxury</button>
+                    <button class="tab" data-filter="Floral Collection">Floral</button>
+                    <button class="tab" data-filter="Ethnic Collection">Ethnic</button>
+                    <button class="tab" data-filter="New Arrivals">New Arrivals</button>
+                </div>
+            </div>
+        </div>
+        <div class="product-grid" id="productGrid">
+            <!-- Cards injected by script.js -->
+        </div>
+    </section>
+
+
+
+    <!-- ===== Editorial quote ===== -->
+    <section class="editorial">
+        <img src="images/editorial.jpg" alt="Close up of dress fabric and stitching detail">
+        <div class="editorial-copy">
+            <p class="quote-mark">“</p>
+            <p class="quote">We don't design dresses to photograph well on a rack. We design them to move the way
+                <em>you</em> move — down a staircase, across a dance floor, into a cab.
+            </p>
+            <p class="quote-attr">— Priya Raman, Head Pattern Cutter</p>
+        </div>
+    </section>
+
+    <!-- ===== Newsletter ===== -->
+    <section class="newsletter">
+        <div class="newsletter-inner">
+            <p class="eyebrow eyebrow-light">Fitting Notes</p>
+            <h2>Get first look at new fabric drops.</h2>
+            <form id="newsletterForm" novalidate>
+                <input type="email" id="newsletterEmail" placeholder="you@email.com" required
+                    aria-label="Email address">
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+            <p class="newsletter-msg" id="newsletterMsg" role="status"></p>
+        </div>
+    </section>
+
+    <!-- ===== Footer ===== -->
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">Style<em>Nest</em></a>
+                <p>Pattern-tested dresses, cut for real bodies and real rooms.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Shop</h3>
+                <a href="shop.html">All Dresses</a>
+                <a href="categories.html">Occasions</a>
+                <a href="wishlist.html">Wishlist</a>
+            </div>
+            <div class="footer-col">
+                <h3>Account</h3>
+                <a href="login.html">Sign In</a>
+                <a href="signup.html">Create Account</a>
+                <a href="orders.html">Track an Order</a>
+            </div>
+            <div class="footer-col">
+                <h3>Studio</h3>
+                <a href="about.html">Our Fabric</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 StyleNest Studio. All measurements in good faith.</p>
+        </div>
+    </footer>
+
+    <div class="toast" id="toast"></div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

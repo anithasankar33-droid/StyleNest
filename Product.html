@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details — StyleNest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="site-header" id="siteHeader">
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <a href="index.html" class="logo">Style<em>Nest</em></a>
+        <nav class="main-nav" id="mainNav">
+            <a href="shop.html">Shop</a>
+            <a href="categories.html">Occasions</a>
+            <a href="categories.html#new">New In</a>
+            <a href="about.html">Our Fabric</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="header-icons">
+            <button class="icon-btn" id="searchBtn" aria-label="Search">
+                <svg viewBox="0 0 24 24">
+                    <circle cx="11" cy="11" r="7" />
+                    <line x1="21" y1="21" x2="16.5" y2="16.5" />
+                </svg>
+            </button>
+            <a href="wishlist.html" class="icon-btn" aria-label="Wishlist">
+                <svg viewBox="0 0 24 24">
+                    <path
+                        d="M12 20s-7-4.35-9.5-8.5C.7 8.1 2.1 4.5 5.7 4.1 8 3.85 10 5 12 7.5 14 5 16 3.85 18.3 4.1c3.6.4 5 4 3.2 7.4C19 15.65 12 20 12 20z" />
+                </svg>
+                <span class="badge" id="wishlistCount">0</span>
+            </a>
+            <a href="cart.html" class="icon-btn" aria-label="Cart">
+                <svg viewBox="0 0 24 24">
+                    <path d="M4 6h16l-1.5 10.5a2 2 0 0 1-2 1.5H7.5a2 2 0 0 1-2-1.5L4 6z" />
+                    <path d="M8 6V5a4 4 0 0 1 8 0v1" />
+                </svg>
+                <span class="badge" id="cartCount">0</span>
+            </a>
+        </div>
+        <div class="search-panel" id="searchPanel">
+            <input type="text" placeholder="Search for a silhouette, colour, occasion…" aria-label="Search dresses">
+            <button id="searchClose" aria-label="Close search">✕</button>
+        </div>
+    </header>
+
+    <section class="pdp-hero">
+        <p class="breadcrumb"><a href="index.html">Home</a> / <a href="shop.html">Shop</a> / <span
+                id="pdpCrumb">Product</span></p>
+    </section>
+
+    <section class="pdp-layout" id="pdpLayout">
+
+        <div class="pdp-gallery">
+            <div class="pdp-main-image">
+                <img id="pdpMainImg" src="" alt="">
+                <span class="product-tag" id="pdpTag" hidden></span>
+            </div>
+            <div class="pdp-thumbs" id="pdpThumbs"></div>
+        </div>
+
+        <div class="pdp-info">
+            <p class="eyebrow" id="pdpCategory">Category</p>
+            <h1 id="pdpName">Product Name</h1>
+            <p class="pdp-price" id="pdpPrice">₹0</p>
+
+            <div class="pdp-block">
+                <p class="pdp-label">Colour — <span id="pdpColor"></span></p>
+            </div>
+
+            <div class="pdp-block">
+                <p class="pdp-label">Size</p>
+                <div class="size-grid pdp-sizes" id="pdpSizes"></div>
+                <a href="#" class="size-guide-link">Size guide</a>
+            </div>
+
+            <div class="pdp-block pdp-qty-block">
+                <p class="pdp-label">Quantity</p>
+                <div class="qty-stepper">
+                    <button class="qty-btn" id="pdpQtyDec">−</button>
+                    <span id="pdpQty">1</span>
+                    <button class="qty-btn" id="pdpQtyInc">+</button>
+                </div>
+            </div>
+
+            <div class="pdp-actions">
+                <button class="btn btn-primary pdp-add-btn" id="pdpAddCart">Add to Cart</button>
+                <button class="wishlist-toggle pdp-wish-btn" id="pdpWishBtn" aria-label="Toggle wishlist">
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            d="M12 20s-7-4.35-9.5-8.5C.7 8.1 2.1 4.5 5.7 4.1 8 3.85 10 5 12 7.5 14 5 16 3.85 18.3 4.1c3.6.4 5 4 3.2 7.4C19 15.65 12 20 12 20z" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="pdp-tabs">
+                <div class="pdp-tab-heads">
+                    <button class="pdp-tab-head active" data-tab="desc">Description</button>
+                    <button class="pdp-tab-head" data-tab="fabric">Fabric & Care</button>
+                    <button class="pdp-tab-head" data-tab="shipping">Shipping</button>
+                </div>
+                <div class="pdp-tab-panel active" id="tab-desc">
+                    <p>Cut on the bias so it moves with you rather than against you. Fitted through the waist, easing
+                        into a soft fall through the hem — pattern-tested across nine body types before release.</p>
+                </div>
+                <div class="pdp-tab-panel" id="tab-fabric">
+                    <p>Certified low-impact fabric blend. Hand wash cold or dry clean. Cool iron on reverse if needed.
+                        Store on a padded hanger to hold its shape.</p>
+                </div>
+                <div class="pdp-tab-panel" id="tab-shipping">
+                    <p>Dispatched within 2 business days. Free standard shipping on orders over ₹5,000. Free returns
+                        within 14 days of delivery, unworn with tags attached.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="related-section">
+        <div class="section-head">
+            <p class="eyebrow">You Might Also Like</p>
+            <h2>Pairs well with this cut.</h2>
+        </div>
+        <div class="product-grid" id="relatedGrid"></div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">Style<em>Nest</em></a>
+                <p>Pattern-tested dresses, cut for real bodies and real rooms.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Shop</h3>
+                <a href="shop.html">All Dresses</a>
+                <a href="categories.html">Occasions</a>
+                <a href="wishlist.html">Wishlist</a>
+            </div>
+            <div class="footer-col">
+                <h3>Account</h3>
+                <a href="login.html">Sign In</a>
+                <a href="signup.html">Create Account</a>
+                <a href="orders.html">Track an Order</a>
+            </div>
+            <div class="footer-col">
+                <h3>Studio</h3>
+                <a href="about.html">Our Fabric</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 StyleNest Studio. All measurements in good faith.</p>
+        </div>
+    </footer>
+
+    <div class="toast" id="toast"></div>
+
+    <script src="js/script.js"></script>
+    <script src="js/product.js"></script>
+</body>
+
+</html>

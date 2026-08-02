@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In — StyleNest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+
+<body>
+
+    <div class="auth-page">
+
+        <div class="auth-visual">
+            <a href="index.html" class="logo logo-light">Style<em>Nest</em></a>
+            <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=1000&auto=format&fit=crop"
+                alt="Model in a StyleNest evening dress">
+            <div class="auth-quote">
+                <p class="quote-mark">“</p>
+                <p>An account remembers your size, your fittings, your favourites — so the next order takes forty
+                    seconds, not forty minutes.</p>
+            </div>
+        </div>
+
+        <div class="auth-form-side">
+            <a href="index.html" class="logo logo-mobile">Style<em>Nest</em></a>
+
+            <div class="auth-box">
+                <p class="eyebrow">Welcome Back</p>
+                <h1>Sign in to your closet.</h1>
+                <p class="auth-sub">New here? <a href="signup.html">Create an account</a> instead.</p>
+
+                <form id="loginForm" novalidate>
+                    <label>Email
+                        <input type="email" name="email" id="loginEmail" placeholder="you@email.com" required>
+                        <span class="field-error" id="loginEmailError"></span>
+                    </label>
+
+                    <label>Password
+                        <div class="password-field">
+                            <input type="password" name="password" id="loginPassword" placeholder="••••••••" required
+                                minlength="6">
+                            <button type="button" class="toggle-pass" data-target="loginPassword"
+                                aria-label="Show password">Show</button>
+                        </div>
+                        <span class="field-error" id="loginPasswordError"></span>
+                    </label>
+
+                    <div class="form-row-between">
+                        <label class="check"><input type="checkbox" name="remember"><span>Remember me</span></label>
+                        <a href="#" class="forgot-link">Forgot password?</a>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary auth-submit">Sign In</button>
+                </form>
+
+                <div class="auth-divider"><span>or</span></div>
+
+                <button class="btn btn-ghost auth-social">Continue with Google</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="toast" id="toast"></div>
+
+    <script src="js/script.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+
+</html>
