@@ -102,7 +102,8 @@ No build step or dependencies are required to run the site.
 
 ---
 ### 🔐 Login
-![Login](screenshots/login.png)
+![Login](images/screenshots/loginpage.png)  ![Login](images/screenshots/login.png)
+
 ---
 ### 📞 Contact Page
 ![Contact](images/screenshots/contactpage.png)
