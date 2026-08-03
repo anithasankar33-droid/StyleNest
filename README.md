@@ -51,7 +51,7 @@ No build step or dependencies are required to run the site.
 
 1. Clone the repository
    ```bash
-   git clone https://github.com/<your-username>/StyleNest.git
+   git clone https://anithasankar33-droid.github.io/StyleNest/
    cd StyleNest
    ```
 2. Open `index.html` directly in your browser, **or** serve it locally for the best experience (some browsers restrict local file access for scripts):
