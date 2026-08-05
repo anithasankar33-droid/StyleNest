@@ -127,3 +127,11 @@ This project is available for personal and educational use. Add a license of you
 ## 👩‍💻 Author
 
 Built by **Anitha S.**
+
+## 👩‍💻 Author
+
+**Anitha S.**
+
+Aspiring Full Stack Developer passionate about building responsive, user-friendly web applications using HTML, CSS, JavaScript, React, Node.js, and modern web technologies.
+
+- GitHub:
