@@ -51,7 +51,7 @@ No build step or dependencies are required to run the site.
 
 1. Clone the repository
    ```bash
-   git clone https://anithasankar33-droid.github.io/StyleNest/
+   git clone https://anithasankar33-droid.github.io/StyleNest
    cd StyleNest
    ```
 2. Open `index.html` directly in your browser, **or** serve it locally for the best experience (some browsers restrict local file access for scripts):
@@ -126,12 +126,8 @@ This project is available for personal and educational use. Add a license of you
 
 ## 👩‍💻 Author
 
-Built by **Anitha S.**
-
-## 👩‍💻 Author
-
 **Anitha S.**
 
 Aspiring Full Stack Developer passionate about building responsive, user-friendly web applications using HTML, CSS, JavaScript, React, Node.js, and modern web technologies.
 
-- GitHub:
+- GitHub: https://github.com/anithasankar33-droid
