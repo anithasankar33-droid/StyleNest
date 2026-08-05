@@ -641,6 +641,7 @@ section {
     position: absolute;
     top: 12px;
     left: 12px;
+    z-index: 2;
     background: var(--ink);
     color: var(--ivory);
     font-family: var(--font-mono);
@@ -658,6 +659,7 @@ section {
     position: absolute;
     top: 10px;
     right: 10px;
+    z-index: 2;
     width: 32px;
     height: 32px;
     background: rgba(245, 239, 230, 0.9);
@@ -686,6 +688,7 @@ section {
     left: 10px;
     right: 10px;
     bottom: 10px;
+    z-index: 2;
     background: var(--ink);
     color: var(--ivory);
     font-family: var(--font-mono);
