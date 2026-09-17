@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
         categories: new Set(),
         types: new Set(),
         sizes: new Set(),
+        silhouettes: new Set(),
         maxPrice: 10000,
         sort: 'featured'
     };
@@ -30,6 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let items = PRODUCTS.filter(p => {
             if (state.categories.size && !state.categories.has(p.category)) return false;
             if (state.types.size && !state.types.has(p.type)) return false;
+            if (state.silhouettes.size && !state.silhouettes.has(p.silhouette)) return false;
             if (state.sizes.size && !p.size.some(s => state.sizes.has(s))) return false;
             if (p.price > state.maxPrice) return false;
             return true;
@@ -87,9 +89,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    document.querySelectorAll('#shopFilters input[name="type"]').forEach(box => {
+    document.querySelectorAll('#shopFilters input[name="silhouette"]').forEach(box => {
         box.addEventListener('change', () => {
-            box.checked ? state.types.add(box.value) : state.types.delete(box.value);
+            box.checked ? state.silhouettes.add(box.value) : state.silhouettes.delete(box.value);
             currentPage = 1;
             render();
         });
@@ -127,6 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('clearFilters').addEventListener('click', () => {
         state.categories.clear();
         state.types.clear();
+        state.silhouettes.clear();
         state.sizes.clear();
         state.maxPrice = 10000;
         state.sort = 'featured';
