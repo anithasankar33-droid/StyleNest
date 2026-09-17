@@ -31,7 +31,7 @@ StyleNest/
 ├── shop.html              # Shop / product listing
 ├── categories.html        # Browse by occasion/category
 ├── accessories.html       # Accessories listing
-├── Product.html            # Product detail page
+├── product.html            # Product detail page
 ├── cart.html               # Shopping cart
 ├── wishlist.html           # Saved items
 ├── checkout.html           # Checkout flow
@@ -126,4 +126,8 @@ This project is available for personal and educational use. Add a license of you
 
 ## 👩‍💻 Author
 
-Built by **Anitha S.**
+**Anitha S.**
+
+Aspiring Full Stack Developer passionate about building responsive, user-friendly web applications using HTML, CSS, JavaScript, React, Node.js, and modern web technologies.
+
+- GitHub: https://github.com/anithasankar33-droid
