@@ -2,7 +2,7 @@
    StyleNest — auth.js
    Runs on login.html and signup.html. Client-side validation
    only (no real backend) — stores a mock session in
-   localStorage so profile.html/orders.html can greet the user.
+   localStorage so profile.html/order.html can greet the user.
    ========================================================= */
 
 document.addEventListener('DOMContentLoaded', () => {

@@ -1,348 +1,288 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Our Story — StyleNest</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-</head>
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
-
+  <body>
     <header class="site-header" id="siteHeader">
-        <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
-            <span></span><span></span><span></span>
+      <button
+        class="nav-toggle"
+        id="navToggle"
+        aria-label="Open menu"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+      <a href="index.html" class="logo">Style<em>Nest</em></a>
+      <nav class="main-nav" id="mainNav">
+        <a href="shop.html">Shop</a>
+        <a href="categories.html">Occasions</a>
+        <a href="about.html" class="active-link">Our Story</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-icons">
+        <button class="icon-btn" id="searchBtn" aria-label="Search">
+          <svg viewBox="0 0 24 24">
+            <circle cx="11" cy="11" r="7" />
+            <line x1="21" y1="21" x2="16.5" y2="16.5" />
+          </svg>
         </button>
-        <a href="index.html" class="logo">Style<em>Nest</em></a>
-        <nav class="main-nav" id="mainNav">
-            <a href="shop.html">Shop</a>
-            <a href="categories.html">Occasions</a>
-            <a href="about.html" class="active-link">Our Story</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-        <div class="header-icons">
-            <button class="icon-btn" id="searchBtn" aria-label="Search">
-                <svg viewBox="0 0 24 24">
-                    <circle cx="11" cy="11" r="7" />
-                    <line x1="21" y1="21" x2="16.5" y2="16.5" />
-                </svg>
-            </button>
-            <a href="wishlist.html" class="icon-btn" aria-label="Wishlist">
-                <svg viewBox="0 0 24 24">
-                    <path
-                        d="M12 20s-7-4.35-9.5-8.5C.7 8.1 2.1 4.5 5.7 4.1 8 3.85 10 5 12 7.5 14 5 16 3.85 18.3 4.1c3.6.4 5 4 3.2 7.4C19 15.65 12 20 12 20z" />
-                </svg>
-                <span class="badge" id="wishlistCount">0</span>
-            </a>
-            <a href="cart.html" class="icon-btn" aria-label="Cart">
-                <svg viewBox="0 0 24 24">
-                    <path d="M4 6h16l-1.5 10.5a2 2 0 0 1-2 1.5H7.5a2 2 0 0 1-2-1.5L4 6z" />
-                    <path d="M8 6V5a4 4 0 0 1 8 0v1" />
-                </svg>
-                <span class="badge" id="cartCount">0</span>
-            </a>
-        </div>
-        <div class="search-panel" id="searchPanel">
-            <input type="text" placeholder="Search for a silhouette, colour, occasion…" aria-label="Search dresses">
-            <button id="searchClose" aria-label="Close search">✕</button>
-        </div>
+        <a href="wishlist.html" class="icon-btn" aria-label="Wishlist">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M12 20s-7-4.35-9.5-8.5C.7 8.1 2.1 4.5 5.7 4.1 8 3.85 10 5 12 7.5 14 5 16 3.85 18.3 4.1c3.6.4 5 4 3.2 7.4C19 15.65 12 20 12 20z"
+            />
+          </svg>
+          <span class="badge" id="wishlistCount">0</span>
+        </a>
+        <a href="cart.html" class="icon-btn" aria-label="Cart">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M4 6h16l-1.5 10.5a2 2 0 0 1-2 1.5H7.5a2 2 0 0 1-2-1.5L4 6z"
+            />
+            <path d="M8 6V5a4 4 0 0 1 8 0v1" />
+          </svg>
+          <span class="badge" id="cartCount">0</span>
+        </a>
+      </div>
+      <div class="search-panel" id="searchPanel">
+        <input
+          type="text"
+          placeholder="Search for a silhouette, colour, occasion…"
+          aria-label="Search dresses"
+        />
+        <button id="searchClose" aria-label="Close search">✕</button>
+      </div>
     </header>
 
     <!-- ===== About hero ===== -->
     <section class="about-hero">
+      <div class="about-hero-copy">
+        <p class="eyebrow">THE STYLENEST STORY</p>
 
-        <div class="about-hero-copy">
+        <h1>
+          Dresses designed around
+          <em>the way you move.</em>
+        </h1>
 
-            <p class="eyebrow">THE STYLENEST STORY</p>
+        <p class="about-lead">
+          StyleNest creates thoughtfully designed dresses that balance modern
+          silhouettes, considered fabrics and effortless comfort.
+        </p>
 
-            <h1>
-                Dresses designed around
-                <em>the way you move.</em>
-            </h1>
+        <a href="shop.html" class="btn btn-primary"> Explore the Collection </a>
+      </div>
 
-            <p class="about-lead">
-                StyleNest creates thoughtfully designed dresses that
-                balance modern silhouettes, considered fabrics and
-                effortless comfort.
-            </p>
-
-            <a href="shop.html" class="btn btn-primary">
-                Explore the Collection
-            </a>
-
-        </div>
-
-        <div class="about-hero-image">
-
-            <img src="images/our.jpg" alt="Elegant StyleNest dress">
-
-        </div>
-
+      <div class="about-hero-image">
+        <img src="images/our.jpg" alt="Elegant StyleNest dress" />
+      </div>
     </section>
 
     <!-- ===== Numbers strip ===== -->
     <section class="about-values">
+      <div class="section-head">
+        <p class="eyebrow">WHAT WE BELIEVE</p>
 
-        <div class="section-head">
-            <p class="eyebrow">WHAT WE BELIEVE</p>
+        <h2>Thoughtful design, from first sketch to final stitch.</h2>
+      </div>
 
-            <h2>
-                Thoughtful design,
-                from first sketch to final stitch.
-            </h2>
+      <div class="values-grid">
+        <div class="value-card">
+          <span>01</span>
+
+          <h3>Fit First</h3>
+
+          <p>
+            Every silhouette begins with movement, proportion and the way a
+            dress feels when it is actually worn.
+          </p>
         </div>
 
+        <div class="value-card">
+          <span>02</span>
 
-        <div class="values-grid">
+          <h3>Considered Fabric</h3>
 
-            <div class="value-card">
-
-                <span>01</span>
-
-                <h3>Fit First</h3>
-
-                <p>
-                    Every silhouette begins with movement,
-                    proportion and the way a dress feels
-                    when it is actually worn.
-                </p>
-
-            </div>
-
-
-            <div class="value-card">
-
-                <span>02</span>
-
-                <h3>Considered Fabric</h3>
-
-                <p>
-                    We think about texture, weight, drape
-                    and comfort before choosing the fabric
-                    for a design.
-                </p>
-
-            </div>
-
-
-            <div class="value-card">
-
-                <span>03</span>
-
-                <h3>Timeless Form</h3>
-
-                <p>
-                    We create modern silhouettes that feel
-                    relevant today and remain wearable
-                    beyond a single trend.
-                </p>
-
-            </div>
-
+          <p>
+            We think about texture, weight, drape and comfort before choosing
+            the fabric for a design.
+          </p>
         </div>
 
+        <div class="value-card">
+          <span>03</span>
+
+          <h3>Timeless Form</h3>
+
+          <p>
+            We create modern silhouettes that feel relevant today and remain
+            wearable beyond a single trend.
+          </p>
+        </div>
+      </div>
     </section>
 
     <section class="fabric-story">
+      <div class="section-head">
+        <p class="eyebrow">FABRIC & MATERIALS</p>
 
-        <div class="section-head">
+        <h2>The right fabric changes everything.</h2>
 
-            <p class="eyebrow">
-                FABRIC & MATERIALS
-            </p>
+        <p>
+          Fabric determines how a dress moves, falls and feels. We choose
+          materials based on texture, weight, comfort and drape.
+        </p>
+      </div>
 
-            <h2>
-                The right fabric
-                changes everything.
-            </h2>
+      <div class="fabric-grid">
+        <div class="fabric-card">
+          <div class="fabric-number">01</div>
 
-            <p>
-                Fabric determines how a dress moves, falls
-                and feels. We choose materials based on
-                texture, weight, comfort and drape.
-            </p>
+          <h3>Satin</h3>
 
+          <p>Smooth texture with an elegant, fluid finish.</p>
         </div>
 
+        <div class="fabric-card">
+          <div class="fabric-number">02</div>
 
-        <div class="fabric-grid">
+          <h3>Linen</h3>
 
-            <div class="fabric-card">
-
-                <div class="fabric-number">01</div>
-
-                <h3>Satin</h3>
-
-                <p>
-                    Smooth texture with an elegant,
-                    fluid finish.
-                </p>
-
-            </div>
-
-
-            <div class="fabric-card">
-
-                <div class="fabric-number">02</div>
-
-                <h3>Linen</h3>
-
-                <p>
-                    Lightweight and naturally relaxed
-                    for effortless everyday dressing.
-                </p>
-
-            </div>
-
-
-            <div class="fabric-card">
-
-                <div class="fabric-number">03</div>
-
-                <h3>Chiffon</h3>
-
-                <p>
-                    Lightweight movement for
-                    soft occasion dressing.
-                </p>
-
-            </div>
-
-
-            <div class="fabric-card">
-
-                <div class="fabric-number">04</div>
-
-                <h3>Cotton</h3>
-
-                <p>
-                    Soft, versatile and designed
-                    for everyday comfort.
-                </p>
-
-            </div>
-
+          <p>
+            Lightweight and naturally relaxed for effortless everyday dressing.
+          </p>
         </div>
 
+        <div class="fabric-card">
+          <div class="fabric-number">03</div>
+
+          <h3>Chiffon</h3>
+
+          <p>Lightweight movement for soft occasion dressing.</p>
+        </div>
+
+        <div class="fabric-card">
+          <div class="fabric-number">04</div>
+
+          <h3>Cotton</h3>
+
+          <p>Soft, versatile and designed for everyday comfort.</p>
+        </div>
+      </div>
     </section>
 
     <!-- ===== Process ===== -->
     <section class="about-process">
-        <div class="section-head">
-            <p class="eyebrow">How a Dress Gets Made Here</p>
-            <h2>From first idea
-                to final dress.</h2>
-        </div>
+      <div class="section-head">
+        <p class="eyebrow">How a Dress Gets Made Here</p>
+        <h2>From first idea to final dress.</h2>
+      </div>
 
-        <div class="process-grid">
-            <div class="process-step">
-                <p class="process-num">01</p>
-                <h3>Drawn on the body, not the mannequin</h3>
-                <p>Every silhouette starts as a live fitting — we design toward how fabric moves on a walking, sitting,
-                    dancing body.</p>
-            </div>
-            <div class="process-step">
-                <p class="process-num">02</p>
-                <h3>Graded across nine sizes</h3>
-                <p>Instead of scaling one pattern up and down, we re-fit proportions at each size so a UK 8 and a UK 18
-                    both hang correctly.</p>
-            </div>
-            <div class="process-step">
-                <p class="process-num">03</p>
-                <h3>Sourced from certified mills</h3>
-                <p>Every fabric in rotation is checked against GOTS or OEKO-TEX low-impact standards before it reaches
-                    the cutting table.</p>
-            </div>
-            <div class="process-step">
-                <p class="process-num">04</p>
-                <h3>Free resizing, not just returns</h3>
-                <p>If a dress doesn't sit right, our tailors adjust it free within 60 days — the goal is the fit, not
-                    the refund.</p>
-            </div>
+      <div class="process-grid">
+        <div class="process-step">
+          <p class="process-num">01</p>
+          <h3>Drawn on the body, not the mannequin</h3>
+          <p>
+            Every silhouette starts as a live fitting — we design toward how
+            fabric moves on a walking, sitting, dancing body.
+          </p>
         </div>
+        <div class="process-step">
+          <p class="process-num">02</p>
+          <h3>Graded across nine sizes</h3>
+          <p>
+            Instead of scaling one pattern up and down, we re-fit proportions at
+            each size so a UK 8 and a UK 18 both hang correctly.
+          </p>
+        </div>
+        <div class="process-step">
+          <p class="process-num">03</p>
+          <h3>Sourced from certified mills</h3>
+          <p>
+            Every fabric in rotation is checked against GOTS or OEKO-TEX
+            low-impact standards before it reaches the cutting table.
+          </p>
+        </div>
+        <div class="process-step">
+          <p class="process-num">04</p>
+          <h3>Free resizing, not just returns</h3>
+          <p>
+            If a dress doesn't sit right, our tailors adjust it free within 60
+            days — the goal is the fit, not the refund.
+          </p>
+        </div>
+      </div>
     </section>
 
     <section class="editorial">
+      <img
+        src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?q=80&w=1200&auto=format&fit=crop"
+        alt="StyleNest dress fabric and stitching"
+      />
 
-        <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?q=80&w=1200&auto=format&fit=crop"
-            alt="StyleNest dress fabric and stitching">
+      <div class="editorial-copy">
+        <p class="quote-mark">“</p>
 
-        <div class="editorial-copy">
+        <p class="quote">
+          Good design is not only about how a dress looks. It is about how
+          confidently you feel when you wear it.
+        </p>
 
-            <p class="quote-mark">“</p>
-
-            <p class="quote">
-                Good design is not only about how a dress
-                looks. It is about how confidently you feel
-                when you wear it.
-            </p>
-
-            <p class="quote-attr">
-                — StyleNest Studio
-            </p>
-
-        </div>
-
+        <p class="quote-attr">— StyleNest Studio</p>
+      </div>
     </section>
 
     <!-- ===== CTA ===== -->
     <section class="about-cta">
+      <p class="eyebrow">YOUR NEXT LOOK</p>
 
-        <p class="eyebrow">
-            YOUR NEXT LOOK
-        </p>
+      <h2>Find the dress that feels like you.</h2>
 
-        <h2>
-            Find the dress
-            that feels like you.
-        </h2>
+      <p>
+        Explore our collection of considered silhouettes, colours and fabrics.
+      </p>
 
-        <p>
-            Explore our collection of considered
-            silhouettes, colours and fabrics.
-        </p>
-
-        <a href="shop.html" class="btn btn-primary">
-            Shop All Dresses
-        </a>
-
+      <a href="shop.html" class="btn btn-primary"> Shop All Dresses </a>
     </section>
 
     <footer class="site-footer">
-        <div class="footer-grid">
-            <div class="footer-brand">
-                <a href="index.html" class="logo">Style<em>Nest</em></a>
-                <p>Pattern-tested dresses, cut for real bodies and real rooms.</p>
-            </div>
-            <div class="footer-col">
-                <h3>Shop</h3>
-                <a href="shop.html">All Dresses</a>
-                <a href="categories.html">Occasions</a>
-                <a href="wishlist.html">Wishlist</a>
-            </div>
-            <div class="footer-col">
-                <h3>Account</h3>
-                <a href="login.html">Sign In</a>
-                <a href="signup.html">Create Account</a>
-                <a href="orders.html">Track an Order</a>
-            </div>
-            <div class="footer-col">
-                <h3>Studio</h3>
-                <a href="about.html" class="active-link">Our Story</a>
-                <a href="contact.html">Contact</a>
-            </div>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">Style<em>Nest</em></a>
+          <p>Pattern-tested dresses, cut for real bodies and real rooms.</p>
         </div>
-        <div class="footer-bottom">
-            <p>© 2026 StyleNest Studio. All measurements in good faith.</p>
+        <div class="footer-col">
+          <h3>Shop</h3>
+          <a href="shop.html">All Dresses</a>
+          <a href="categories.html">Occasions</a>
+          <a href="wishlist.html">Wishlist</a>
         </div>
+        <div class="footer-col">
+          <h3>Account</h3>
+          <a href="login.html">Sign In</a>
+          <a href="signup.html">Create Account</a>
+          <a href="order.html">Track an Order</a>
+        </div>
+        <div class="footer-col">
+          <h3>Studio</h3>
+          <a href="about.html" class="active-link">Our Story</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 StyleNest Studio. All measurements in good faith.</p>
+      </div>
     </footer>
 
     <script src="js/script.js"></script>
-</body>
-
+  </body>
 </html>
